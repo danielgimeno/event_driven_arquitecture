@@ -1,0 +1,49 @@
+# Gitignore para PHP y Composer
+
+# Ignorar dependencias de Composer
+/vendor/
+/composer.lock
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Caché y logs
+/var/
+/logs/
+/cache/
+
+# Configuración específica de IDEs y editores
+/.vscode/
+/.idea/
+*.iml
+
+# Archivos generados
+/node_modules/
+/public/build/
+/public/uploads/
+
+# Archivos de depuración y de usuario
+*.log
+*.bak
+*.swp
+
+# Configuración de Docker
+docker-compose.override.yml
+
+# Ignorar archivos de PHPUnit y cobertura de código
+/phpunit.xml
+/phpunit.xml.dist
+/tests/_output/
+/tests/_support/_generated/
+/tests/_support/Helper/
+/tests/_support/Step/
+
+# Ignorar archivos de Redis si se usan dumps
+/dump.rdb
+
+# Otras configuraciones temporales
+.DS_Store
+Thumbs.db
+
